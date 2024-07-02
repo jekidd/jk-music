@@ -1,3 +1,4 @@
+<?php
 /*
 Plugin Name:  JK Music Library
 Plugin URI:   https://github.com/jekidd/jk-music.git
