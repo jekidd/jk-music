@@ -1,0 +1,39 @@
+DATABASE INFO
+[RECORDS]
+id mediumint(9)
+
+name varchar(255)
+Name of the album.
+
+artist varchar(255)
+Name of the artist.
+
+fm_id int(255)
+Last.FM unique ID. Used to look up additional album info.
+
+fm_mbid varchar(255)
+Additional Last.FM ID info.
+
+url varchar(100)
+Last.FM URL.
+
+releasedate datetime
+Album release date info.
+
+cover varchar(255)
+Album cover. Saved as relative URL after file has been downloaded to the server.
+
+rating int(1)
+Album rating. [1-5] defaulting to [3]
+
+[META]
+id mediumint(9)
+
+recordid mediumint(9)
+ID of album from the records table. Used for joins.
+
+
+key varchar(50)
+Type of meta entry (ie 'tag')
+
+value varchar(50)
